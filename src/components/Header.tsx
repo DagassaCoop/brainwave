@@ -11,7 +11,7 @@ import { HamburgerMenu } from "./design/Header";
 
 // Constants
 import { navigation } from "@/constants";
-import Button from "./Button";
+import Button from "./foundation/Button";
 
 const Header = () => {
   const location = useLocation();

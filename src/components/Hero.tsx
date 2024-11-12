@@ -8,8 +8,8 @@ import { curve, heroBackground, robot } from "@/assets";
 import { heroIcons } from "@/constants";
 
 // Components
-import Section from "./Section";
-import Button from "./Button";
+import Section from "./foundation/Section";
+import Button from "./foundation/Button";
 import {
   BackgroundCircles,
   BottomLine,
