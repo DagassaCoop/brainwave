@@ -28,7 +28,8 @@
       "@/*": ["./src/*"]
     },
 
-    "allowJs": true
+    "allowJs": true,
+    "allowUnusedLabels": true
   },
   "include": ["src"]
 }

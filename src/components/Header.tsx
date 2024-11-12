@@ -27,7 +27,7 @@ const Header = () => {
     openNavigationMove.current = gsap.to(navigation, {
       y: 0,
       duration: 0.5,
-      ease: "none",
+      ease: "power1.inOut",
       paused: true,
     });
   });

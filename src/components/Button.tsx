@@ -40,7 +40,7 @@ const Button: FC<IButtonProps> = ({
   const renderLink = () => (
     <a href={href} className={classes}>
       <span className={spanClasses}>{children}</span>
-      {ButtonSvg()}
+      {ButtonSvg(white)}
     </a>
   );
 
