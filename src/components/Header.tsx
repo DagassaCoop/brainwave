@@ -21,7 +21,8 @@ const Header = () => {
 
   useGSAP(() => {
     const navigation = document.getElementById("navigation");
-    if (!navigation) return;
+    if (!navigation || document.querySelector("html")!.offsetWidth > 648)
+      return;
 
     gsap.set(navigation, { y: "-100vh" });
     openNavigationMove.current = gsap.to(navigation, {
@@ -62,7 +63,7 @@ const Header = () => {
         </a>
         <nav
           id="navigation"
-          className="flex fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent"
+          className="flex fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent lg:expanded"
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((n) => {

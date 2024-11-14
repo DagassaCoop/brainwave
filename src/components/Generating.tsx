@@ -11,10 +11,10 @@ interface IGeneratingProps {
 
 const Generating: FC<IGeneratingProps> = ({ className }) => {
   useGSAP(() => {
-    const generating = document.getElementById("generatingIcon");
-    if (!generating) return;
+    const generatingElements = document.querySelectorAll(".generating");
+    if (!generatingElements) return;
 
-    gsap.to(generating, {
+    gsap.to(generatingElements, {
       duration: 1.5,
       rotate: "360",
       repeat: -1,
@@ -30,10 +30,9 @@ const Generating: FC<IGeneratingProps> = ({ className }) => {
       ].join(" ")}
     >
       <img
-        id="generatingIcon"
         src={loading}
         alt="Loading"
-        className="mr-4"
+        className="generating mr-4"
         width={20}
         height={20}
       />
