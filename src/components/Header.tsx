@@ -21,7 +21,7 @@ const Header = () => {
 
   useGSAP(() => {
     const navigation = document.getElementById("navigation");
-    if (!navigation || document.querySelector("html")!.offsetWidth > 648)
+    if (!navigation || document.querySelector("html")!.offsetWidth > 1024)
       return;
 
     gsap.set(navigation, { y: "-100vh" });
