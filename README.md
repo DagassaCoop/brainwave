@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
+# Brainwave - AI Chat Application Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for Brainwave - an AI-powered chat application built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+![Brainwave Logo](./src/assets/brainwave-symbol.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Modern UI/UX design with smooth animations
+- Responsive layout for all device sizes
+- Interactive components with GSAP animations
+- Parallax scrolling effects
+- Type-safe development with TypeScript
+- Fast development environment with Vite
+- Tailwind CSS for styling
+- ESLint and Prettier for code quality
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- React 18.3
+- TypeScript
+- Vite
+- Tailwind CSS
+- GSAP for animations
+- React Router DOM
+- React Just Parallax
+- Scroll Lock
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+## 📦 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/DagassaCoop/brainwave.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
+2. Install dependencies:
+```bash
+npm install
 ```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+## 🏗️ Project Structure
+
+```
+src/
+├── app/              # App configuration and routing
+├── assets/           # Images, SVGs, and other static files
+├── components/       # React components
+│   ├── design/      # Design-specific components
+│   └── foundation/  # Base/reusable components
+├── constants/        # Application constants and data
+└── main.tsx         # Application entry point
+```
+
+## 🎨 Key Components
+
+- **Hero Section**: Showcases the main application features with animated elements
+- **Benefits**: Displays key benefits of using Brainwave
+- **Services**: Highlights various AI services offered
+- **Pricing**: Shows different pricing tiers
+- **Roadmap**: Displays the development roadmap
+- **Collaboration**: Demonstrates integration capabilities
