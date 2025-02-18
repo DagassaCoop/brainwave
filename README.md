@@ -48,13 +48,13 @@ npm run dev
 
 ```
 src/
-├── app/              # App configuration and routing
-├── assets/           # Images, SVGs, and other static files
-├── components/       # React components
-│   ├── design/      # Design-specific components
-│   └── foundation/  # Base/reusable components
-├── constants/        # Application constants and data
-└── main.tsx         # Application entry point
+├── app/               # App configuration and routing
+├── assets/            # Images, SVGs, and other static files
+├── components/        # React components
+│   ├── design/        # Design-specific components
+│   └── foundation/    # Base/reusable components
+├── constants/         # Application constants and data
+└── main.tsx           # Application entry point
 ```
 
 ## 🎨 Key Components
